@@ -309,6 +309,15 @@ Create a separate sheet named 'KPI_Summary' and construct the following calculat
    - Raw Dataset CSV File (.csv)
    - Completed Markdown Documentation (README.md)
    - Dashboard Screenshot (PNG/JPG)
+
+
+---
+
+### Key Enhancements Made:
+1. **Pacing Realism:** Every day is structured with time blocks (e.g., *00–15 Min demo*, *15–50 Min lab*, *50–80 Min challenge*) ensuring students remain engaged for the full 60–90 minutes.
+2. **Technical Depth:** Added specific formula syntax, nested logic (`IF` within `IF`), `XLOOKUP` defaults, string functions (`TRIM`, `PROPER`), and table conversions (`CTRL + T`).
+3. **Data Detective Challenges:** Applied practical diagnostic tasks (such as scatter plot trendline analysis, multi-table lookups, and filter audits) so advanced students have deep tasks to explore.
+4. **Integration of README Generator Tool:** Seamlessly built your Google Apps Script README generator app directly into Day 6 as the mandatory documentation deliverable.
 5. Copy your public GitHub repository link and submit it for final evaluation!
 ```
 
