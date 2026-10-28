@@ -1,0 +1,6 @@
+Brand,Country_Origin,Authentication_Fee_USD,Resale_Market_Demand
+Nike,USA,10.00,High
+Adidas,Germany,8.00,Moderate
+Supreme,USA,12.00,Very High
+Fear of God,USA,15.00,High
+Denim Tears,USA,15.00,Moderate

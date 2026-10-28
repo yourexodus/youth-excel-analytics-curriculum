@@ -1,0 +1,9 @@
+Product_Name,Supplier,Warranty_Months,Target_Margin
+RGB Mechanical Keyboard,LogiTech,24,0.35
+Wireless Gaming Mouse,Razer,12,0.40
+Curved Gaming Monitor 27in,Samsung,36,0.25
+Pro Streamer Mic,Shure,24,0.30
+Gaming Headset 7.1,HyperX,12,0.45
+XL Gaming Mousepad,SteelSeries,6,0.50
+Ergonomic Gaming Chair,Secretlab,24,0.20
+USB WebCam 1080p,LogiTech,12,0.35
