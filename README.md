@@ -228,6 +228,8 @@ Create a new tab named 'KPI_Summary' and build calculations using named ranges:
 #### 📅 DAY 12 (Unit 6, Part B): GitHub Deployment & Final Showcase (60–90 Mins)
 * **Focus:** GitHub Repository Creation, Asset Upload, & Final Showcase
 * **Lab:** Deployment & Class Presentation
+* [Readme Code Generator](https://script.google.com/macros/s/AKfycbzVnDWxPtew1hFOfx6IiaCXZoirqNJS802LywmHoAdtsIl9WCjAwDAaVIlteh56dV2m/exec)
+```[cite: 2]
 ```text
 [EXERCISE 6.2] GitHub Portfolio Publishing
 1. Log into GitHub -> Click 'New Repository'.
