@@ -214,9 +214,7 @@ Create a new tab named 'KPI_Summary' and build calculations using named ranges:
 ```text
 [EXERCISE 6.1] Interactive README Documentation
 1. Launch the Readme Code Generator web app in your Chrome browser
-* [Readme Code Generator](https://script.google.com/macros/s/AKfycbzVnDWxPtew1hFOfx6IiaCXZoirqNJS802LywmHoAdtsIl9WCjAwDAaVIlteh56dV2m/exec)
-```[cite: 2] 
-2. Complete all required documentation fields:
+2. Review all required documentation fields and gather in your required documents:
    - Project Title & Author Name
    - Raw Dataset Description & Initial Quality Issues Identified
    - Cleaning Steps Executed (Deduplication, TRIM, Case Fixes)
