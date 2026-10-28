@@ -31,8 +31,7 @@ Students select 1 primary dataset from the local `data/` folder to analyze acros
 
 🛠️ **Course Tools & Web Applications:**
 * 🧹 **Data Cleaning Answer Key:** [Master Data Cleaning Guide](data_cleaning_guide.md)
-* 📝 **README Generator Web App:** [Build My README App](https://script.google.com/macros/s/AKfycbzVnDWxPtew1hFOfx6IiaCXZoirqNJS802LywmHoAdtsIl9WCjAwDAaVIlteh56dV2m/exec)
-
+* 📝 **README Generator Web App:** [Marlainna's README Code Generator](https://script.google.com/macros/s/AKfycbzTm9B6w57n1EqtTowftsY_pbLjCvCSqnlr5f396GmLlof8vDUS89lmBK7VVZiRps8w/exec)
 ---
 
 ## 📅 12-Day Detailed Unit Schedule
