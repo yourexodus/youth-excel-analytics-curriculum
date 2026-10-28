@@ -78,7 +78,7 @@ Students select 1 primary dataset from the local `data/` folder to analyze acros
 #### 📅 DAY 3 (Unit 2, Part A): CSV Ingestion & Deduplication (60–90 Mins)
 * **Focus:** Clean Data Import, Deduplication, & Range Setup
 * **Lab:** Ingestion & Duplicate Scrubbing
-```text
+```text 
 [EXERCISE 2.1] CSV Import via Power Query Engine
 1. Open Excel -> Data Tab -> Get Data -> From File -> From Text/CSV.
 2. Select your dataset file and set Data Type Detection to 'Based on entire dataset'. Click Load.
