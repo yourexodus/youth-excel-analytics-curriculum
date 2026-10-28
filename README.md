@@ -210,12 +210,12 @@ Create a new tab named 'KPI_Summary' and build calculations using named ranges:
 #### 📅 DAY 11 (Unit 6, Part A): README Generator Web App Documentation (60–90 Mins)
 * **Focus:** Workbook Auditing & Project Documentation Generation
 * **Lab:** Documentation Web App Execution
+
 ```text
 [EXERCISE 6.1] Interactive README Documentation
-1. Launch the custom web app in your Chrome browser:
-    https://script.google.com/macros/s/AKfycbzVnDWxPtew1hFOfx6IiaCXZoirqNJS802LywmHoAdtsIl9WCjAwDAaVIlteh56dV2m/exec
-   [Readme Code Generator](https://script.google.com/macros/s/AKfycbzVnDWxPtew1hFOfx6IiaCXZoirqNJS802LywmHoAdtsIl9WCjAwDAaVIlteh56dV2m/exec)
-```[cite: 2]
+1. Launch the Readme Code Generator web app in your Chrome browser
+* [Readme Code Generator](https://script.google.com/macros/s/AKfycbzVnDWxPtew1hFOfx6IiaCXZoirqNJS802LywmHoAdtsIl9WCjAwDAaVIlteh56dV2m/exec)
+```[cite: 2] 
 2. Complete all required documentation fields:
    - Project Title & Author Name
    - Raw Dataset Description & Initial Quality Issues Identified
