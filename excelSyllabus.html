@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 Excel Data Analytics Course Syllabus (12-Day Program)</title>
+    <style>
+        :root {
+            --primary: #7c3aed;
+            --primary-hover: #6d28d9;
+            --bg: #f3f0ff;
+            --card-bg: #ffffff;
+            --border: #ddd6fe;
+            --text-main: #1e1b4b;
+            --text-muted: #4c1d95;
+            --accent-green: #10b981;
+            --accent-pink: #ec4899;
+            --theme-header-bg: linear-gradient(135deg, #7c3aed 0%, #ec4899 100%);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 50%, #fce7f3 100%);
+            color: var(--text-main);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: var(--card-bg);
+            border: 3px solid var(--primary);
+            border-radius: 20px;
+            padding: 24px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.15);
+            margin-bottom: 24px;
+            transition: all 0.3s ease;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 0px #fbcfe8;
+        }
+
+        .tagline {
+            color: var(--text-muted);
+            font-weight: bold;
+            font-size: 1.05rem;
+            margin-bottom: 16px;
+        }
+
+        /* Dataset Selector Theme Bar */
+        .dataset-theme-bar {
+            background: #f5f3ff;
+            border: 2px dashed var(--primary);
+            border-radius: 14px;
+            padding: 12px 18px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .dataset-theme-bar label {
+            font-weight: 800;
+            color: var(--primary);
+            font-size: 0.95rem;
+        }
+
+        .dataset-theme-bar select {
+            padding: 8px 14px;
+            border-radius: 8px;
+            border: 2px solid var(--primary);
+            font-weight: bold;
+            font-size: 0.95rem;
+            background: white;
+            color: var(--text-main);
+            cursor: pointer;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 3px solid var(--border);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 3px dashed var(--border);
+            padding-bottom: 10px;
+        }
+
+        /* Overview Grid */
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .info-box {
+            background-color: #f5f3ff;
+            border: 2px solid var(--border);
+            border-left: 6px solid var(--primary);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .info-box h3 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .info-box ul {
+            list-style-type: none;
+        }
+
+        .info-box li {
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        /* Datasets list styling */
+        .dataset-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .dataset-item {
+            background: #f8fafc;
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            padding: 12px 16px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .dataset-item a {
+            color: var(--primary);
+            text-decoration: none;
+            font-family: monospace;
+            background: #e0e7ff;
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        .dataset-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Unit Accordions */
+        .unit-card {
+            border-left: 8px solid var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .unit-header {
+            background: var(--theme-header-bg);
+            color: white;
+            padding: 16px 20px;
+            border-radius: 12px;
+            margin-bottom: 16px;
+            font-size: 1.25rem;
+            font-weight: 800;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .day-block {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .day-title {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .focus-badge {
+            display: inline-block;
+            background: #e0e7ff;
+            color: var(--primary);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        pre {
+            background-color: #1e1b4b;
+            color: #f0abfc;
+            padding: 16px;
+            border-radius: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.88rem;
+            white-space: pre-wrap;
+            word-break: break-word;
+            margin-top: 10px;
+            border: 2px solid var(--primary);
+            position: relative;
+        }
+
+        .deliverable-tag {
+            background: #dcfce7;
+            color: #166534;
+            border: 2px solid #86efac;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-top: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        .btn-link {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .btn-link:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header id="mainHeader">
+            <h1>📊 Excel Data Analytics Course Syllabus</h1>
+            <p class="tagline">🚀 12-Day Intensive Hands-On Program for High School Students (Ages 15–18)</p>
+
+            <div class="dataset-theme-bar">
+                <label for="syllabusThemeSelect">🎨 Choose Active Course Theme / Dataset:</label>
+                <select id="syllabusThemeSelect" onchange="switchSyllabusTheme()">
+                    <option value="gamer">🎮 Gamer Gear & Tech Store Sales (Cyberpunk Neon)</option>
+                    <option value="esports">🏆 Esports Tournament Stats (Esports Crimson)</option>
+                    <option value="sneaker">👟 Sneaker & Streetwear Resale (Streetwear Gold)</option>
+                    <option value="streaming">🍿 Streaming Movies & Anime (Streaming Purple)</option>
+                    <option value="fitness">⚡ High School Athletic Combine (Athletics Green)</option>
+                </select>
+            </div>
+        </header>
+
+        <!-- Course Overview -->
+        <div class="card">
+            <h2 class="card-title">🎨 Course Overview & Prerequisites</h2>
+            <p style="font-weight: bold; line-height: 1.6; margin-bottom: 16px;">
+                Welcome to <strong>Data Analytics</strong>! In this hands-on 12-day course, you'll discover how to turn raw, messy datasets into actionable intelligence using <strong>Microsoft Excel (Excel 2019, 2021, or Microsoft 365 recommended)</strong> and our custom <strong>Code & README Generator App</strong>. Spanning 6 core units over 12 sessions, you'll master data hygiene, dynamic formulas, conditional logic, PivotTable summaries, interactive dashboards, and automated portfolio documentation. Don't worry about writing website code—I've built and fully customized the README & Code Generator web app for you!
+            </p>
+
+            <div class="overview-grid">
+                <div class="info-box">
+                    <h3>🌟 Our Core Values</h3>
+                    <ul>
+                        <li>🟢 <strong>Respectful</strong> & Supportive</li>
+                        <li>💡 <strong>Curious</strong> & Engaged</li>
+                        <li>🛡️ <strong>Safe for Learning</strong></li>
+                        <li>🚀 <strong>Tech Progress</strong> & Growth</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>🎯 What You Will Learn</h3>
+                    <ul>
+                        <li>🔍 Connect & organize raw data sources</li>
+                        <li>🧹 Identify & correct real-world data issues</li>
+                        <li>⚡ Transform & combine dynamic datasets</li>
+                        <li>📝 Generate portfolio documentation via Code Generator</li>
+                        <li>📈 Build an executive portfolio on GitHub</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>💻 System Requirements & Tools</h3>
+                    <ul>
+                        <li><strong>Software:</strong> MS Excel 2019, 2021, or 365 (Desktop App)</li>
+                        <li><strong>Web Tool:</strong> Marlainna's Code & README Generator App</li>
+                        <li><strong>OS:</strong> Windows 10, 11, or macOS 11+</li>
+                        <li><strong>CPU:</strong> 1 GHz or faster 64-bit</li>
+                        <li><strong>RAM:</strong> 2 GB min (4 GB recommended)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Datasets & Web Apps -->
+        <div class="card">
+            <h2 class="card-title">📁 Interactive Datasets & Web Tools</h2>
+            <p style="margin-bottom: 14px; font-weight: bold;">Students select 1 primary dataset from the local <code>data/</code> folder to analyze across all 12 sessions, and use the Code & README Generator to document progress:</p>
+
+            <div class="dataset-list">
+                <div class="dataset-item">
+                    <span>🎮 <strong>Dataset 1:</strong> Gamer Gear & Tech Store Sales</span>
+                    <a href="data/raw/01_gamer_gear_sales_messy.csv">data/01_gamer_gear_sales_messy.csv</a>
+                </div>
+                <div class="dataset-item">
+                    <span>🏆 <strong>Dataset 2:</strong> Esports Tournament & Player Stats</span>
+                    <a href="data/raw/02_esports_player_stats.csv">data/02_esports_player_stats.csv</a>
+                </div>
+                <div class="dataset-item">
+                    <span>👟 <strong>Dataset 3:</strong> Sneaker & Streetwear Resale Tracker</span>
+                    <a href="data/raw/03_sneaker_streetwear_resale.csv">data/03_sneaker_streetwear_resale.csv</a>
+                </div>
+                <div class="dataset-item">
+                    <span>🍿 <strong>Dataset 4:</strong> Streaming Movies & Anime Analytics</span>
+                    <a href="data/raw/04_streaming_movies_shows.csv">data/04_streaming_movies_shows.csv</a>
+                </div>
+                <div class="dataset-item">
+                    <span>⚡ <strong>Dataset 5:</strong> High School Athletic Combine Performance</span>
+                    <a href="data/raw/05_high_school_fitness_combine.csv">data/05_high_school_fitness_combine.csv</a>
+                </div>
+            </div>
+
+            <div style="margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap;">
+                <a class="btn-link" href="data_cleaning_guide.md" target="_blank">🧹 Master Data Cleaning Guide</a>
+                <a class="btn-link" href="https://script.google.com/macros/s/AKfycbwogrNauoJDUCHiN-o5i-kOvj1wmsA6HflqZ2EgwIN1fpIT20TWhhlO5vzh107MqZ_2/exec" target="_blank">🚀 Launch Code & README Generator App</a>
+            </div>
+        </div>
+
+        <!-- Unit Schedule -->
+        <h2 style="font-size: 1.6rem; color: var(--primary); margin-bottom: 16px; font-weight: 800;">📅 12-Day Detailed Unit Schedule</h2>
+
+        <!-- UNIT 1 -->
+        <div class="card unit-card">
+            <div class="unit-header">
+                <span>🟢 UNIT 1: Data Architecture & Grid Foundations</span>
+                <span>Days 1 & 2</span>
+            </div>
+
+            <div class="day-block">
+                <div class="day-title">📅 DAY 1 (Unit 1, Part A): Interface Mastery & Data Type Audit</div>
+                <div class="focus-badge">Focus: Interface Navigation, Boundaries, Data Types & View Locking</div>
+                <pre>[EXERCISE 1.1] Grid Navigation & Boundary Mapping
+1. Open your selected dataset from the 'data/' folder in Excel.
+2. Select cell A1. Press CTRL + DOWN ARROW to find total rows. Record exact count.
+3. Press CTRL + RIGHT ARROW to identify all attribute columns.
+4. Highlight Row 1 -> View Tab -> Freeze Panes -> Click 'Freeze Top Row'.
+5. Scroll down 100 rows to ensure headers remain locked.
+
+[EXERCISE 1.2] Column Type Classification & Explicit Formatting
+1. On a new tab named 'Audit_Log', create headers: 'Column_Name' and 'Data_Type'.
+2. Classify each column as: Text, Currency, Decimal, Integer, or Date.
+3. Format date columns explicitly to Short Date (YYYY-MM-DD).
+4. Format monetary columns to Currency ($) with 2 decimals.</pre>
+            </div>
+
+            <div class="day-block">
+                <div class="day-title">📅 DAY 2 (Unit 1, Part B): Deep-Dive Data Audit</div>
+                <div class="focus-badge">Focus: Data Quality Diagnostics & Mixed Data Type Identification</div>
+                <pre>[EXERCISE 1.3] Data Detective Challenge: Mixed Type Diagnostics
+1. Inspect numerical columns (Price, GPA, Scores) for text-stored values.
+2. Use Conditional Formatting: Home -> Conditional Formatting -> Highlight Cells Rules -> Text That Contains "$".
+3. Identify cells with irregular formatting (e.g., "$49.99" mixed into numeric columns).
+4. Create an anomaly log on Sheet2 listing cell locations and error descriptions.</pre>
+            </div>
+
+            <div class="deliverable-tag">
+                🎯 <strong>Unit 1 Deliverable:</strong> Clean workbook with locked headers, formatted numbers/dates, and a completed Data Type Audit Log.
+            </div>
+        </div>
+
+        <!-- UNIT 2 -->
+        <div class="card unit-card">
+            <div class="unit-header">
+                <span>🔵 UNIT 2: Data Hygiene & Cleaning Workflows</span>
+                <span>Days 3 & 4</span>
+            </div>
+
+            <div class="day-block">
+                <div class="day-title">📅 DAY 3 (Unit 2, Part A): CSV Ingestion & Deduplication</div>
+                <div class="focus-badge">Focus: Clean Data Import, Deduplication, & Range Setup</div>
+                <pre>[EXERCISE 2.1] CSV Import via Power Query Engine
+1. Open Excel -> Data Tab -> Get Data -> From File -> From Text/CSV.
+2. Select your dataset file and set Data Type Detection to 'Based on entire dataset'. Click Load.
+3. Press CTRL + A -> Data Tab -> Remove Duplicates.
+4. Verify header recognition, click OK, and record how many duplicate rows were removed.
+
+[EXERCISE 2.2] White-Space & Case Cleanup
+1. Insert a blank column titled 'Clean_String'.
+2. Enter formula: =PROPER(TRIM(B2)) to remove leading/trailing spaces and correct capitalization.
+3. Fill down the column -> Copy -> Paste Special as Values over the original column. Delete helper column.</pre>
+            </div>
+
+            <div class="day-block">
+                <div class="day-title">📅 DAY 4 (Unit 2, Part B): Diagnostic Filtering & Standardization</div>
+                <div class="focus-badge">Focus: AutoFilters, Categorical Standardization, & Blank Value Handling</div>
+                <pre>[EXERCISE 2.3] Data Detective Challenge: Categorical Standardization
+1. Apply AutoFilters across headers (CTRL + SHIFT + L).
+2. Open filter dropdowns for categorical columns (Region, Genre, Brand).
+3. Search for case splits (e.g., "NORTH" vs "North") or typos.
+4. Use Find & Replace (CTRL + H) to unify all regional/category terms into Proper Case.
+5. Filter by 'Blanks' in numeric columns and impute default values ('0' or 'N/A').</pre>
+            </div>
+
+            <div class="deliverable-tag">
+                🎯 <strong>Unit 2 Deliverable:</strong> Deduplicated, scrubbed, and standardized dataset with zero trailing spaces or split category names.
+            </div>
+        </div>
+
+        <!-- UNIT 3 -->
+        <div class="card unit-card">
+            <div class="unit-header">
+                <span>🟡 UNIT 3: Analytics Formulas & Conditional Logic</span>
+                <span>Days 5 & 6</span>
+            </div>
+
+            <div class="day-block">
+                <div class="day-title">📅 DAY 5 (Unit 3, Part A): Statistical Metrics & Summary Sheets</div>
+                <div class="focus-badge">Focus: Aggregation Functions (SUM, AVERAGE, MIN, MAX, COUNT, COUNTA)</div>
+                <pre>[EXERCISE 3.1] Statistical Summary Benchmarks
+Create a new tab named 'KPI_Summary' and build calculations using named ranges:
+1. Total Aggregated Revenue/Score:  =SUM(CleanData!E2:E200)
+2. Average Metric Value:            =AVERAGE(CleanData!E2:E200)
+3. Total Valid Record Count:        =COUNT(CleanData!E2:E200)
+4. Maximum Value Recorded:          =MAX(CleanData!E2:E200)
+5. Minimum Value Recorded:          =MIN(CleanData!E2:E200)</pre>
+            </div>
+
+            <div class="day-block">
+                <div class="day-title">📅 DAY 6 (Unit 3, Part B): Conditional Aggregations & Lookups</div>
+                <div class="focus-badge">Focus: Logical Functions (IF, SUMIF, COUNTIF) and Multi-Table Merges (XLOOKUP)</div>
+                <pre>[EXERCISE 3.2] Conditional Logic & Tiering
+1. Write conditional aggregations for specific categories:
+   =SUMIF(CleanData!C2:C200, "Apparel", CleanData!E2:E200)
+2. Calculate performance counts exceeding averages:
+   =COUNTIF(CleanData!E2:E200, ">" & B2)
+3. Build a calculated column 'Tier_Rating' using nested IF logic:
+   =IF(E2>=100, "Elite", IF(E2>=50, "Standard", "Underperforming"))
+
+[EXERCISE 3.3] Data Detective Challenge: Relational XLOOKUP
+1. Create a reference table listing IDs and target goals on Sheet3.
+2. In your main dataset, write an XLOOKUP formula to retrieve target benchmarks:
+   =XLOOKUP(A2, TargetSheet!A$2:A$20, TargetSheet!B$2:B$20, "Missing Goal")</pre>
+            </div>
+
+            <div class="deliverable-tag">
+                🎯 <strong>Unit 3 Deliverable:</strong> A robust summary worksheet with statistical KPIs, conditional tiering logic, and working XLOOKUP merges.
+            </div>
+        </div>
+
+        <!-- UNIT 4 -->
+        <div class="card unit-card">
+            <div class="unit-header">
+                <span>🟣 UNIT 4: Summarizing Data with PivotTables</span>
+                <span>Days 7 & 8</span>
+            </div>
+
+            <div class="day-block">
+                <div class="day-title">📅 DAY 7 (Unit 4, Part A): Dynamic Tables & Pivot Fundamentals</div>
+                <div class="focus-badge">Focus: Structured Tables (CTRL + T), Value Summaries, & Matrix Layouts</div>
+                <pre>[EXERCISE 4.1] Range Conversion & Basic Pivot Setup
+1. Click inside your clean dataset -> Press CTRL + T -> Confirm headers -> Click OK.
+2. Name table 'CleanDataTable' in Table Design tab.
+3. Click Insert -> PivotTable -> Choose 'New Worksheet' (Name: 'Pivot_Analysis').
+4. Drag primary Category to ROWS and main Numeric Field to VALUES (Set to SUM or AVERAGE).
+
+[EXERCISE 4.2] Multi-Dimensional Matrix Setup
+1. Drag a secondary attribute into COLUMNS to build a dynamic cross-tabulation grid.
+2. Right-click any value cell -> Show Values As -> Select '% of Column Total'.</pre>
+            </div>
+
+            <div class="day-block">
+                <div class="day-title">📅 DAY 8 (Unit 4, Part B): Grouping & Interactive Slicers</div>
+                <div class="focus-badge">Focus: Date/Number Grouping, Timeline Filters, & Interactive Slicers</div>
+                <pre>[EXERCISE 4.3] Data Detective Challenge: Slicer Dashboard Mechanics
+1. Drag Date field to ROWS. Right-click a date cell -> Group -> Select 'Months' & 'Years'.
+2. Click inside PivotTable -> PivotTable Analyze -> Insert Slicer.
+3. Select 2 categorical attributes (e.g., Rank_Tier, Grade_Level, Region) to create visual filter buttons.
+4. Add a Timeline slicer for date filtering. Format slicers into multi-column layouts.</pre>
+            </div>
+
+            <div class="deliverable-tag">
+                🎯 <strong>Unit 4 Deliverable:</strong> A dedicated Pivot_Analysis tab featuring multi-dimensional matrix tables, custom groupings, and interactive slicers.
+            </div>
+        </div>
+
+        <!-- UNIT 5 -->
+        <div class="card unit-card">
+            <div class="unit-header">
+                <span>🟧 UNIT 5: Data Visualization & Executive Dashboards</span>
+                <span>Days 9 & 10</span>
+            </div>
+
+            <div class="day-block">
+                <div class="day-title">📅 DAY 9 (Unit 5, Part A): Chart Selection & Formatting</div>
+                <div class="focus-badge">Focus: Line Charts (Trends), Column Charts (Comparisons), & Scatter Plots</div>
+                <pre>[EXERCISE 5.1] Time Trends & Comparison Graphics
+1. Select monthly PivotTable data -> Insert Tab -> Line Chart with Markers. Title: "Monthly Trend Analysis".
+2. Add vertical axis title ("Revenue ($)").
+3. Select categorical totals -> Insert Clustered Column Chart.
+4. Highlight top-performing bar with an accent color; format remaining bars in gray.
+
+[EXERCISE 5.2] Scatter Plot Correlation Testing
+1. Select two numeric fields (e.g., Dash Time vs Vertical Jump, Retail vs Resale Price).
+2. Click Insert -> Scatter Chart. Add clear X and Y axis titles.
+3. Right-click markers -> Add Trendline -> Display R-squared value to assess correlation.</pre>
+            </div>
+
+            <div class="day-block">
+                <div class="day-title">📅 DAY 10 (Unit 5, Part B): Executive Dashboard Assembly</div>
+                <div class="focus-badge">Focus: Dashboard Layout, De-cluttering, & Unified Slicer Connections</div>
+                <pre>[EXERCISE 5.3] Data Detective Challenge: Dashboard Assembly
+1. Create a sheet named 'Executive_Dashboard'. Disable gridlines (View -> Uncheck Gridlines).
+2. Move Line Chart, Column Chart, Scatter Plot, and Slicers onto the dashboard tab.
+3. Align visual components using Grid Snapping (Page Layout -> Align to Grid).
+4. Connect Slicers to all charts: Right-click Slicer -> Report Connections -> Check all PivotTables.</pre>
+            </div>
+
+            <div class="deliverable-tag">
+                🎯 <strong>Unit 5 Deliverable:</strong> A clean, ungridlined Executive_Dashboard tab with 3 dynamic charts linked to interactive slicers.
+            </div>
+        </div>
+
+        <!-- UNIT 6 -->
+        <div class="card unit-card">
+            <div class="unit-header">
+                <span>🚀 UNIT 6: Automated Portfolio Assembly & GitHub Deployment</span>
+                <span>Days 11 & 12</span>
+            </div>
+
+            <div class="day-block">
+                <div class="day-title">📅 DAY 11 (Unit 6, Part A): Code & README Generator Setup</div>
+                <div class="focus-badge">Focus: Interactive Documentation Generation & Data Verification</div>
+                <pre>[EXERCISE 6.1] Automated Documentation Generation
+1. Launch Marlainna's Code & README Generator web app (`readme_generator.html`).
+2. Select your active course dataset theme (Gamer Gear, Esports, Sneaker Resale, Streaming, or Fitness Combine).
+3. Input your project findings and step-by-step transformations into the form fields:
+   - Step 1: Raw Dataset & CSV Location
+   - Step 2: Data Connections & Structure
+   - Step 3: Data Profiling Insights & Screenshot Path (`\images_profile`)
+   - Step 4: Data Shaping & Cleaning Steps (`\images_dataShaping`)
+   - Step 5: Power Query Function M-code / Excel Chart Rationale (`\images_charting`)
+   - Step 6: Resolved Data Quality Issues Summary
+   - Step 7: Final Cleaned Dataset Preview & Location
+4. Click 'Save & Generate README' and preview your formatted markdown code and visual layout.</pre>
+            </div>
+
+            <div class="day-block">
+                <div class="day-title">📅 DAY 12 (Unit 6, Part B): GitHub Deployment & Showcase</div>
+                <div class="focus-badge">Focus: Repository Publishing, Asset Upload & Final Presentations</div>
+                <pre>[EXERCISE 6.2] GitHub Portfolio Publishing & Presentation
+1. In the Code Generator app, click '💾 Download README.md' to export your generated documentation.
+2. Log into GitHub -> Create a new public repository named 'excel-data-analytics-portfolio'.
+3. Upload your project assets:
+   - Final Cleaned Excel Workbook (`.xlsx`)
+   - Raw Dataset File (`.csv`)
+   - Exported Documentation (`README.md`)
+   - Dashboard & Chart Screenshots (`.png` / `.jpg`)
+4. Copy your live repository URL to submit for course completion and present your findings to the class!</pre>
+            </div>
+
+            <div class="deliverable-tag">
+                🎯 <strong>Unit 6 Deliverable:</strong> A live public GitHub repository built using the Code & README Generator web app, containing your workbook, documentation, raw data, and dashboard visuals.
+            </div>
+        </div>
+
+        <!-- Footer / Contact -->
+        <footer>
+            <p>📬 <strong>Instructor Contact:</strong> marlainna456@gmail.com | 💼 Office Hours available after class</p>
+        </footer>
+    </div>
+
+    <script>
+        const themePresets = {
+            gamer: {
+                primary: "#7c3aed",
+                bgGradient: "linear-gradient(135deg, #7c3aed 0%, #ec4899 100%)"
+            },
+            esports: {
+                primary: "#ef4444",
+                bgGradient: "linear-gradient(135deg, #ef4444 0%, #1e293b 100%)"
+            },
+            sneaker: {
+                primary: "#f59e0b",
+                bgGradient: "linear-gradient(135deg, #f59e0b 0%, #78350f 100%)"
+            },
+            streaming: {
+                primary: "#dc2626",
+                bgGradient: "linear-gradient(135deg, #dc2626 0%, #3b0764 100%)"
+            },
+            fitness: {
+                primary: "#10b981",
+                bgGradient: "linear-gradient(135deg, #10b981 0%, #064e3b 100%)"
+            }
+        };
+
+        function switchSyllabusTheme() {
+            const selectedKey = document.getElementById('syllabusThemeSelect').value;
+            const theme = themePresets[selectedKey];
+
+            document.documentElement.style.setProperty('--primary', theme.primary);
+            document.documentElement.style.setProperty('--border', theme.primary + '44');
+            document.documentElement.style.setProperty('--theme-header-bg', theme.bgGradient);
+        }
+
+        // Initialize Theme
+        switchSyllabusTheme();
+    </script>
+</body>
+</html>
