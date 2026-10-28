@@ -249,13 +249,3 @@ If you have questions regarding the course, daily schedules, or student progress
 * 💼 **Office Hours:** Available by appointment after class hours  
 ```
 
----
-
-### Summary of Changes:
-* Expanded the schedule from **6 days to 12 days** by splitting each of the 6 units into **Part A (Concepts & Labs)** and **Part B (Data Detective Challenges & Audits)**.
-* Each day is explicitly time-boxed for 60–90 minutes of active work.
-* Provided as a single download file block without modifying any of your local files.
-SafeGPT Co-Pilot
-
-Learn an Interesting fact 🧐
-Generate ⚡️
