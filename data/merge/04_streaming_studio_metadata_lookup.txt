@@ -1,8 +1,0 @@
-Title,Production_Studio,Budget_USD,Licensing_Status
-Stranger Things 5,Netflix Studios,300000000,Exclusive
-Demon Slayer Season 4,Ufotable,25000000,Licensed
-Spider-Man Across the Spider-Verse,Sony Pictures,100000000,Licensed
-Jujutsu Kaisen Season 2,MAPPA,30000000,Licensed
-Wednesday Season 2,MGM Television,150000000,Exclusive
-One Piece Film Red,Toei Animation,20000000,Licensed
-The Batman Part II,Warner Bros,200000000,Licensed

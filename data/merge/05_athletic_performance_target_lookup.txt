@@ -1,6 +1,0 @@
-Primary_Sport,Target_40yd_Sec,Target_Vertical_Inches,Target_Bench_Reps
-Football,4.60,32.0,15
-Basketball,4.80,30.0,10
-Track,4.40,34.0,8
-Soccer,4.85,26.0,6
-Volleyball,5.00,28.0,8

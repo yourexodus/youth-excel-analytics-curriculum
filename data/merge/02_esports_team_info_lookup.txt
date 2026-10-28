@@ -1,9 +1,0 @@
-Gamer_Tag,Team_Name,Coach_Name,Sponsor
-PixelNinja,Sentinels,Kaplan,Red Bull
-Vortex_Viper,FaZe Clan,J3T,Monster Energy
-SlayerX,100 Thieves,Zikz,Red Bull
-ShadowPulse,BDS,Mew,Logitech G
-CyberQueen,Optic Gaming,GetAmazed,Razer
-HyperDrive,Cloud9,m3da,Secretlab
-AlphaWolf,Team Liquid,Sliggy,Alienware
-NeonStrike,Fnatic,Mini,Red Bull
