@@ -32,7 +32,7 @@ Students select 1 primary dataset from the local `data/` folder to analyze acros
 🛠️ **Course Tools & Web Applications:**
 * 🧹 **Data Cleaning Answer Key:** [Master Data Cleaning Guide](data_cleaning_guide.md)
 * 📝 **README Generator Web App:** [Marlainna's README Code Generator](https://script.google.com/macros/s/AKfycbzTm9B6w57n1EqtTowftsY_pbLjCvCSqnlr5f396GmLlof8vDUS89lmBK7VVZiRps8w/exec)
-* * [Course Syllabus](https://script.google.com/macros/s/AKfycbxD-gRAFbWHnmyec9hZaI2gZVLbntfEXZQ8k4ya3lQ_KbwJ4dSiVhACB6HUSwlXpyE/exec)    
+* * [HTML: Excel Course Syllabus](https://script.google.com/macros/s/AKfycbxD-gRAFbWHnmyec9hZaI2gZVLbntfEXZQ8k4ya3lQ_KbwJ4dSiVhACB6HUSwlXpyE/exec)    
 ---
 
 ## 📅 12-Day Detailed Unit Schedule
