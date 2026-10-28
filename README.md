@@ -224,10 +224,9 @@ Create a new tab named 'KPI_Summary' and build calculations using named ranges:
 ```
 
 #### 📅 DAY 12 (Unit 6, Part B): GitHub Deployment & Final Showcase (60–90 Mins)
-* **Focus:** GitHub Repository Creation, Asset Upload, & Final Showcase
-* **Lab:** Deployment & Class Presentation
-*  [Readme Code Generator](https://script.google.com/macros/s/AKfycbzVnDWxPtew1hFOfx6IiaCXZoirqNJS802LywmHoAdtsIl9WCjAwDAaVIlteh56dV2m/exec)
-```[cite: 2]
+- **Focus:** GitHub Repository Creation, Asset Upload, & Final Showcase
+- **Lab:** Deployment & Class Presentation
+* [Readme Code Generator](https://script.google.com/macros/s/AKfycbzVnDWxPtew1hFOfx6IiaCXZoirqNJS802LywmHoAdtsIl9WCjAwDAaVIlteh56dV2m/exec)[cite: 2]
 
 ```text
 [EXERCISE 6.2] GitHub Portfolio Publishing
@@ -239,7 +238,6 @@ Create a new tab named 'KPI_Summary' and build calculations using named ranges:
    - Generated Project Documentation (README.md)
    - Dashboard Screenshot (PNG/JPG)
 4. Copy public repository link for final course submission and peer presentations!
-```
 * **Unit 6 Deliverable:** A live public GitHub portfolio repository containing your workbook, documentation, raw data, and dashboard screenshot.
 
 ---
